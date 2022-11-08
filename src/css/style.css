@@ -1,0 +1,128 @@
+@charset "UTF-8";
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #00a2ff;
+}
+
+#cabeçalho {
+    background-color: #000000;
+    padding: 30px;
+
+}
+
+#logo {
+    color: #fff;
+
+}
+
+#container-navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+#list-navbar {
+    display: flex;
+    list-style: none;
+
+}
+
+#navbar li a {
+    display: flex;
+    color: #fff;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+
+}
+
+#conteudo {
+    background-color: #fff;
+    margin: 10px auto;
+    height: 400px;
+    max-width: 500px ;
+    border: 1px solid black;
+}
+
+#email, #password {
+    margin: auto auto;
+    display: block;
+    text-align: center;
+}
+
+#password input {
+    width: 200px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+#email input {
+    width: 200px;
+    padding: 5px;
+    border-radius: 10px;
+
+}
+
+.identificador-input {
+    margin: 10px auto 10px 60px;
+    display: block;
+}
+
+.send-informations {
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    margin: 20px auto;
+    display: block;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.send-informations:hover {
+    background-color: #000000;
+    color: #fff;
+}
+
+.titulo {
+    margin: 30px auto;
+    text-align: center;
+
+}
+
+.pargraph {
+    text-align: justify;
+
+}
+
+#rodapé {
+    background-color: #000000;
+    margin-bottom: 0;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+}
+
+#rodapé a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bolder;
+
+}
+
+#rodapé a:hover {
+    text-decoration: underline;
+    
+}
