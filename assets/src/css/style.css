@@ -1,9 +1,10 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,700&display=swap');
 
 /* Global ----------------------------------------------------------------------------------*/
 
 * {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     padding: 0;
     margin: 0;
 }
@@ -18,7 +19,7 @@ body {
 }
 
 #cabeçalho {
-    background-color: #000000;
+    background-color: none;
     padding: 30px;
     position: relative;
 }
@@ -47,7 +48,7 @@ body {
     padding: 10px;
     text-decoration: none;
     font-weight: bold;
-    
+
 }
 
 #menu-hamb {
@@ -61,7 +62,7 @@ body {
     background-color: #fff;
     margin: 15px auto;
     height: 100%;
-    max-width: 500px ;
+    max-width: 500px;
     border: 1px solid black;
     border-radius: 10px;
     box-shadow: 0 0 5px #000000;
@@ -128,7 +129,8 @@ input:invalid {
     animation: shake .3s;
 }
 
-#email, #password  {
+#email,
+#password {
     margin: auto;
     display: block;
 }
@@ -184,22 +186,29 @@ input:invalid {
 /* Animação dos inputs:invalid's  ----------------------------------------------------------------------------------------------------------------------*/
 
 @keyframes shake {
-    25% { transform: translateX(4px);}
-    50% { transform: translateX(-4px);}
-    75% { transform: translateX(40px);}
+    25% {
+        transform: translateX(4px);
+    }
+
+    50% {
+        transform: translateX(-4px);
+    }
+
+    75% {
+        transform: translateX(40px);
+    }
 }
 
 /* Footer Page ------------------------------------------------------------------------------------------------------------------------- */
 
 #rodapé {
-    background-color: #000000;
+    background-color: none;
     font-size: 15px;
-    margin-bottom: 0;
     color: #fff;
     text-align: left;
-    padding: 7px;
+    padding: 10px;
     position: absolute;
-    bottom: 0;
+    bottom: -10;
     left: 0;
     right: 0;
 
@@ -218,19 +227,24 @@ input:invalid {
 
 #rodapé a:hover {
     text-decoration: underline;
-    
+
 }
 
 /* Responsividade ------------------------------------------------------------------------------------------------------------------------- */
 
-@media screen and (max-width:650px) {
+@media screen and (max-width: 650px) {
+
+    /* ---- Menu-Hamb. ----*/
+
     #navbar {
         display: none;
     }
-    
+
     #menu-hamb {
         display: block;
         cursor: pointer;
+        background: none;
+        border: none;
         color: #fff;
         max-width: 100%;
 
@@ -245,9 +259,9 @@ input:invalid {
         background-color: #000000;
         display: block;
         padding: 10px;
-        margin: 20px;
+        margin: 0px 10px;
         width: 100%;
-        height: 100vh;
+        height: 120vh;
         position: absolute;
         z-index: 1;
         top: 0%;
@@ -256,7 +270,8 @@ input:invalid {
 
     #navbar.active #list-navbar {
         display: block;
-        margin: 20px 40%;
+        margin-top: 25%;
+        margin-left: 40%;
     }
 
     #navbar.active #list-navbar li {
