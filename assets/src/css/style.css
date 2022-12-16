@@ -39,7 +39,11 @@ body {
 #list-navbar {
     display: flex;
     list-style: none;
+}
 
+#navbar li {
+    display: flex;
+    align-items: center;
 }
 
 #navbar li a {
@@ -48,10 +52,13 @@ body {
     padding: 10px;
     text-decoration: none;
     font-weight: bold;
-
 }
 
 #menu-hamb {
+    display: none;
+}
+
+.rigth {
     display: none;
 }
 
@@ -276,5 +283,11 @@ input:invalid {
 
     #navbar.active #list-navbar li {
         font-size: 30px;
+        text-align: center;
+    }
+
+    .rigth {
+        display: block;
+        color: #fff;
     }
 }
