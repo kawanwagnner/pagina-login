@@ -13,11 +13,34 @@ btnMenu.addEventListener('click', () => {
 
 const sendInformations = document.querySelector('#send-informations')
 sendInformations.addEventListener('click', () => {
-    const login = { 
-        email: document.querySelector('.email-box').value, 
-        password: document.querySelector('.password-box').value 
+    const usuario = {
+        nome: document.querySelector('.name-box').value,
+        sobrenome: document.querySelector('.sobrenome-box').value,
+        email: document.querySelector('.email-box').value,
+        password: document.querySelector('.password-box').value
     }
-    
-    email.innerHTML = login.email;
-    password.innerHTML = login.password;
+
+    const nomeCompleto = usuario.nome + ' ' + usuario.sobrenome
+
+    nome.innerHTML = nomeCompleto;
+    sobrenome.innerHTML = usuario.sobrenome;
+    email.innerHTML = usuario.email;
+    password.innerHTML = usuario.password;
 })
+
+function load() {
+
+    const usuario = {
+        nome: document.querySelector('.name-box').value,
+        sobrenome: document.querySelector('.sobrenome-box').value,
+        email: document.querySelector('.email-box').value,
+        password: document.querySelector('.password-box').value
+    }
+
+    const nomeCompleto = usuario.nome + ' ' + usuario.sobrenome
+
+    nome.innerHTML = nomeCompleto;
+    sobrenome.innerHTML = usuario.sobrenome;
+    email.innerHTML = usuario.email;
+    password.innerHTML = usuario.password;
+}

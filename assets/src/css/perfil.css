@@ -76,7 +76,7 @@ body {
 }
 
 .titulo {
-    margin: 30px auto 10px auto;
+    margin: 0px auto 10px auto;
     text-align: center;
     color: #095480;
     font-style: italic;
@@ -86,6 +86,11 @@ body {
     font-size: 20px;
     font-weight: bolder;
     color: #064166;
+}
+
+#foto-perfil {
+    max-width: 50%;
+    margin-top: 0px;
 }
 
 .pargraph {

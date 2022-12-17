@@ -6,13 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>[ Cadastro ]</title>
-    <link rel="stylesheet" href="src/css/cadastro.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="assets/src/css/cadastro.css">
 </head>
 
 <body>
     <header id="cabeçalho">
         <div id="container-navbar">
-            <h1 id="logo">Cadastro</h1>
+            <h1 id="logo">Logo</h1>
             <nav id="navbar">
                 <ul id="list-navbar">
                     <li><a href="login.html">Início</a></li>
@@ -21,44 +22,42 @@
                     <li><a href="#">Novidades</a></li>
                 </ul>
             </nav>
+            <button id="menu-hamb"><i class="fa-solid fa-bars"></i></button>
         </div>
     </header>
     <main id="conteudo">
         <h1 class="titulo">Cadastro:</h1>
-        <span class="segregação">---------------------------------------------</span>
+        <span class="segregação">____________________________________</span>
 
         <div id="container-inputs">
             <h3 class="identificador-input">Nome:</h3>
             <div id="nome">
-                <input class="nome-box" type="text"
-                    pattern="[ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyzçÇ]*"
+                <input class="name-box" type="text" pattern="[ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyzçÇ]*"
                     placeholder="Digite seu Nome:">
             </div>
 
             <h3 class="identificador-sobrenome">Sobrenome:</h3>
             <div id="sobrenome">
-                <input type="text" 
-                pattern="[ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyzçÇ]*"
-                placeholder="Digite seu sobrenome:">
+                <input class="sobrenome-box" type="text"
+                    pattern="[ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyzçÇ]*"
+                    placeholder="Digite seu sobrenome:">
             </div>
             <h3 class="identificador-input">E-mail:</h3>
             <div id="email">
-                <input type="text" 
-                pattern="[ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789@.]*"
-                placeholder="Digite seu E-mail:">
+                <input class="email-box" type="text"
+                    pattern="[ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789@.]*"
+                    placeholder="Digite seu E-mail:">
             </div>
             <h3 class="identificador-input">Senha:</h3>
             <div id="password">
-                <input type="password" placeholder="Digite sua Senha:">
+                <input class="password-box" type="password" placeholder="Digite sua Senha:">
             </div>
             <div id="support">
                 <span class="support"><a href="login.html">Já tem cadastro?</a></span>
-                <span class="support"><a href="#" target="_blank">Esqueceu a senha?</a></span>
+                <span class="support" style="text-decoration: underline;"><a href="#" target="_blank">Termos de cadastro.</a></span>
             </div>
 
-            <button class="send-informations">
-                Enviar☑️
-            </button>
+            <a href="perfil.html"><input id="send-informations" type="button" value="Enviar☑️"></a>
         </div>
 
     </main>
@@ -67,5 +66,5 @@
             Aprendizado.</p>
     </footer>
 </body>
-
+<script src="assets/src/js/script.js"></script>
 </html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[ Bem-Vindo(a)!! ]</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="assets/src/css/perfil.css">
+</head>
+
+<body>
+    <header id="cabeçalho">
+        <div id="container-navbar">
+            <h1 id="logo">Perfil</h1>
+            <nav id="navbar">
+                <ul id="list-navbar">
+                    <li><a href="login.html">Início</a></li>
+                    <li><a href="#">Redes</a></li>
+                    <li><a href="#">Suporte</a></li>
+                    <li><a href="#">Novidades</a></li>
+                </ul>
+            </nav>
+            <button id="menu-hamb"><i class="fa-solid fa-bars"></i></button>
+        </div>
+    </header>
+    <main onload="load()" id="conteudo">
+        <img id="foto-perfil" src="assets/src/img/sem-foto-perfil.png" alt="Foto de perfil indefinida.">
+        <h1 class="titulo">Perfil:</h1>
+
+        <div id="container-inputs">
+            <h3 class="identificador-input">Nome:</h3>
+            <div id="name-box"></div>
+
+            <h3 class="identificador-input">E-mail:</h3>
+            <div id="email-box"></div>
+
+            <h3 class="identificador-input">Senha:</h3>
+            <div id="password-box"></div>
+
+            <div id="support">
+                <span class="support"><a href="cadastro.html">Suporte: Via GitHub.</a></span>
+                <span class="support"><a href="#" target="_blank">Temos de Uso.</a></span>
+            </div>
+        </div>
+
+    </main>
+    <footer id="rodapé">
+        <p>Criado Por <a href="https://github.com/kawanwagnner" target="_blank">Kawan Wagnner</a> Para Fins de
+            Aprendizado.</p>
+    </footer>
+</body>
+<script src="assets/src/js/script.js"></script>
+</html>
