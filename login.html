@@ -16,16 +16,16 @@
             <h1 id="logo">Logo</h1>
             <nav id="navbar">
                 <ul id="list-navbar">
-                    <li><i style="display: none;" class="fa-solid fa-right-to-bracket"></i><a href="login.html">Início</a></li>
-                    <li><i style="display: none;" class="fa-solid fa-right-to-bracket"></i><a href="#">Redes</a></li>
-                    <li><i style="display: none;" class="fa-solid fa-right-to-bracket"></i><a href="#">Suporte</a></li>
-                    <li><i style="display: none;" class="fa-solid fa-right-to-bracket"></i><a href="#">Novidades</a></li>
+                    <li><a href="login.html">Início</a></li>
+                    <li><a href="#">Redes</a></li>
+                    <li><a href="#">Suporte</a></li>
+                    <li><a href="#">Novidades</a></li>
                 </ul>
             </nav>
             <button id="menu-hamb"><i class="fa-solid fa-bars"></i></button>
         </div>
     </header>
-    <main id="conteudo" onmouseenter="enter()" onmouseleave="out()">
+    <main id="conteudo">
         <h1 class="titulo">Login:</h1>
         <span class="segregação">__________________</span>
 
@@ -39,7 +39,7 @@
 
             <h3 class="identificador-input">Senha:</h3>
             <div id="password">
-                <input type="password" 
+                <input class="password-box" type="password" 
                 placeholder="Digite Sua Senha:">
             </div>
             <div id="support">
@@ -47,9 +47,7 @@
                 <span class="support"><a href="#" target="_blank">Esqueceu a senha?</a></span>
             </div>
 
-            <button class="send-informations">
-                Enviar☑️
-            </button>
+            <input id="send-informations" type="button" value="Enviar☑️">
         </div>
         
     </main>

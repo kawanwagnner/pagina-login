@@ -170,7 +170,7 @@ input:invalid {
     font-size: 20px;
 }
 
-.send-informations {
+#send-informations {
     text-align: center;
     font-size: 15px;
     padding: 10px;
@@ -183,7 +183,7 @@ input:invalid {
     color: #064166;
 }
 
-.send-informations:hover {
+#send-informations:hover {
     background-color: #000000;
     color: #fff;
     transition: .5s;
@@ -275,19 +275,15 @@ input:invalid {
         left: -5%;
     }
 
-    #navbar.active #list-navbar {
-        display: block;
-        margin-top: 25%;
-        margin-left: 40%;
-    }
-
-    #navbar.active #list-navbar li {
-        font-size: 30px;
+    #list-navbar {
+        display: inline-table;
         text-align: center;
+        margin-top: 25%;
+        margin-left: 10%;
     }
 
-    .rigth {
-        display: block;
-        color: #fff;
+    #list-navbar li {
+        font-size: 30px;
     }
 }
+
