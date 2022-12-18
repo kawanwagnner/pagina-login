@@ -12,7 +12,8 @@ btnMenu.addEventListener('click', () => {
 })
 
 const sendInformations = document.querySelector('#send-informations')
-sendInformations.addEventListener('click', () => {
+sendInformations.addEventListener('click', (nome, sobrenome, email, password) => {
+    location.href = "perfil.html";
     const usuario = {
         nome: localStorage.setItem('nome', document.querySelector('.name-box').value),
         sobrenome: localStorage.setItem('sobrenome', document.querySelector('.sobrenome-box').value),
