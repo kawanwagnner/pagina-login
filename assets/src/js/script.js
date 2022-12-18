@@ -14,33 +14,25 @@ btnMenu.addEventListener('click', () => {
 const sendInformations = document.querySelector('#send-informations')
 sendInformations.addEventListener('click', () => {
     const usuario = {
-        nome: document.querySelector('.name-box').value,
-        sobrenome: document.querySelector('.sobrenome-box').value,
-        email: document.querySelector('.email-box').value,
-        password: document.querySelector('.password-box').value
+        nome: localStorage.setItem('nome', document.querySelector('.name-box').value),
+        sobrenome: localStorage.setItem('sobrenome', document.querySelector('.sobrenome-box').value),
+        email: localStorage.setItem('email', document.querySelector('.email-box').value),
+        password: localStorage.setItem('password', document.querySelector('.password-box').value)
     }
 
     const nomeCompleto = usuario.nome + ' ' + usuario.sobrenome
 
-    nome.innerHTML = nomeCompleto;
-    sobrenome.innerHTML = usuario.sobrenome;
-    email.innerHTML = usuario.email;
-    password.innerHTML = usuario.password;
+    nome.innerHTML = '';
+    sobrenome.innerHTML = '';
+    email.innerHTML = '';
+    password.innerHTML = '';
 })
 
-function load() {
 
-    const usuario = {
-        nome: document.querySelector('.name-box').value,
-        sobrenome: document.querySelector('.sobrenome-box').value,
-        email: document.querySelector('.email-box').value,
-        password: document.querySelector('.password-box').value
-    }
+/*function load() {
+    const nomeCompleto = localStorage.getItem('nome') + ' ' + localStorage.getItem('sobrenome')
 
-    const nomeCompleto = usuario.nome + ' ' + usuario.sobrenome
-
-    nome.innerHTML = nomeCompleto;
-    sobrenome.innerHTML = usuario.sobrenome;
-    email.innerHTML = usuario.email;
-    password.innerHTML = usuario.password;
-}
+    nome.innerHTML = (nomeCompleto);
+    email.innerHTML = localStorage.getItem('email');
+    password.innerHTML = localStorage.getItem('password');
+}*/
