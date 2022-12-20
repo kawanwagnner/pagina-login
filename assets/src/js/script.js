@@ -1,3 +1,5 @@
+/* Menu Hamburguer ----------------------------------------------------------------------------------*/
+
 const btnMenu = document.querySelector("#menu-hamb")
 btnMenu.addEventListener('click', () => {
     const navBar = document.querySelector('#navbar')
@@ -11,9 +13,10 @@ btnMenu.addEventListener('click', () => {
     }
 })
 
+/* Local Storage Cadastro ..saving informations ----------------------------------------------------------------------------------*/
+
 const sendInformations = document.querySelector('#send-informations')
-sendInformations.addEventListener('click', (nome, sobrenome, email, password) => {
-    location.href = "perfil.html";
+sendInformations.addEventListener('click', () => {
     const usuario = {
         nome: localStorage.setItem('nome', document.querySelector('.name-box').value),
         sobrenome: localStorage.setItem('sobrenome', document.querySelector('.sobrenome-box').value),
@@ -21,7 +24,7 @@ sendInformations.addEventListener('click', (nome, sobrenome, email, password) =>
         password: localStorage.setItem('password', document.querySelector('.password-box').value)
     }
 
-    const nomeCompleto = usuario.nome + ' ' + usuario.sobrenome
+    location.href = "perfil.html";
 
     nome.innerHTML = '';
     sobrenome.innerHTML = '';
@@ -29,11 +32,21 @@ sendInformations.addEventListener('click', (nome, sobrenome, email, password) =>
     password.innerHTML = '';
 })
 
+/* Local Storage Login ..comparing informations ----------------------------------------------------------------------------------*/
 
-/*function load() {
-    const nomeCompleto = localStorage.getItem('nome') + ' ' + localStorage.getItem('sobrenome')
+sendInformations.addEventListener('click', () => {
+    const usuario = {
+        localEmail: document.querySelector('.email-box').value,
+        localPassword: document.querySelector('.password-box').value
+    }
 
-    nome.innerHTML = (nomeCompleto);
-    email.innerHTML = localStorage.getItem('email');
-    password.innerHTML = localStorage.getItem('password');
-}*/
+    const email = localStorage.getItem('email')
+    const password = localStorage.getItem('password')
+
+    if (localEmail == email ) {
+        location.href = 'perfil.html'
+    } else {
+        alert('Usuario não encontrado!!')
+    }
+
+})

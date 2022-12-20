@@ -1,23 +1,35 @@
-/*
-const usuario = {
-    nome: localStorage.setItem('nome', document.querySelector('.name-box').value),
-    sobrenome: localStorage.setItem('sobrenome', document.querySelector('.sobrenome-box').value),
-    email: localStorage.setItem('email', document.querySelector('.email-box').value),
-    password: localStorage.setItem('password', document.querySelector('.password-box').value)
-}
+/* Pull Informations ..of user ----------------------------------------------------------------------------------*/
 
-const nomeCompleto = localStorage.getItem('nome') + ' ' + localStorage.getItem('sobrenome')
-const load = [usuario.nome, usuario.email, usuario.password]
+const localNome = document.querySelector('.titulo')
+const localEmail = document.querySelector('.email-box')
+const localPassword = document.querySelector('.password-box')
 
-load.addEventListener('click', () => {
-    load[0].innerHTML = nomeCompleto;
-    load[1].innerHTML = localStorage.getItem('email');
-    load[2].innerHTML = localStorage.getItem('pasword');
-})*/
+const nomeSobrenome = localStorage.getItem('nome') + ' ' + localStorage.getItem('sobrenome')
+const email = localStorage.getItem('email')
+const password = localStorage.getItem('password')
 
-localStorage.setItem('nome', document.querySelector('.name-box').value)
-const nome1 = document.querySelector('#nome')
-const nome2 = document.querySelector('#email')
+localNome.innerHTML = nomeSobrenome;
+localEmail.innerHTML = email;
+localPassword.innerHTML = password;
 
-nome1.innerHTML = 'sewsj'
-nome2.innerHTML == 'sjwev'
+/* Sign Out ..of user ----------------------------------------------------------------------------------*/
+
+const btn = document.querySelector('#clean')
+btn.addEventListener('click', () => {
+    location.href = 'cadastro.html'
+    localStorage.clear()
+})
+
+/* Change Photo ..of user ----------------------------------------------------------------------------------*/
+
+const changePhoto = document.querySelector('#change-photo')
+const phtoPerfil = document.querySelector('#foto-perfil')
+const containerChangePhoto = document.querySelector('#container-hover')
+
+containerChangePhoto,phtoPerfil.addEventListener('mouseenter', () => {
+    changePhoto.style.opacity = '100%'
+})
+
+containerChangePhoto,phtoPerfil.addEventListener('mouseout', () => {
+    changePhoto.style.opacity = '0%'
+})

@@ -82,15 +82,25 @@ body {
     font-style: italic;
 }
 
-.segregação {
-    font-size: 20px;
-    font-weight: bolder;
-    color: #064166;
+#container-hover {
+    position: relative;
+    width: 100%;
+    cursor: pointer;
 }
 
 #foto-perfil {
     max-width: 50%;
     margin-top: 0px;
+    border-radius: 100%;
+}
+
+#change-photo {
+    opacity: 0%;
+    transition: .3s;
+    position: absolute;
+    top: 50%;
+    right: 47%;
+    font-size: 30px;
 }
 
 .pargraph {
@@ -100,7 +110,7 @@ body {
 
 .support {
     font-size: 15px;
-    margin: 10px 80px;
+    margin: 30px 80px;
     width: 200px;
 }
 
@@ -128,17 +138,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-around;
-}
-
-/* Inputs configs ------------------------------------------------------------------------------------------------------------------------- */
-
-input {
-    font-size: 20px;
-}
-
-input:invalid {
-    background-color: #ff00002f;
-    animation: shake .3s;
 }
 
 #email,
@@ -195,32 +194,15 @@ input:invalid {
     font-size: 20px;
 }
 
-.identificador-sobrenome {
-    margin: 20px auto 10px -190px;
-    display: block;
-    color: #095480dc;
+#clean {
     font-size: 20px;
-}
-
-#send-informations {
-    text-align: center;
-    font-size: 15px;
-    padding: 10px;
-    border-radius: 10px;
-    border: none;
-    margin: 20px auto;
-    display: block;
     cursor: pointer;
-    font-weight: bold;
+    border: none;
+    background: none;
+    text-decoration: underline;
+    margin-top: 20px;
     color: #064166;
 }
-
-#send-informations:hover {
-    background-color: #000000;
-    color: #fff;
-    transition: .5s;
-}
-
 
 /* Animação dos inputs:invalid's  ----------------------------------------------------------------------------------------------------------------------*/
 
