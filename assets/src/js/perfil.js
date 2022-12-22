@@ -16,7 +16,7 @@ localPassword.innerHTML = password;
 
 const btn = document.querySelector('#clean')
 btn.addEventListener('click', () => {
-    location.href = 'cadastro.html'
+    location.href = 'index.html'
     localStorage.clear()
 })
 
