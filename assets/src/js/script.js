@@ -42,11 +42,14 @@ sendInformations.addEventListener('click', () => {
 
     const email = localStorage.getItem('email')
     const password = localStorage.getItem('password')
+    alert('Usuario não encontrado!!')
+    alert('[Login ainda em desenvolvimento] 😄')
+})
 
-    if (localEmail == email ) {
-        location.href = 'perfil.html'
-    } else {
-        alert('Usuario não encontrado!!')
-    }
+/* Local Storage Login ..comparing informations ----------------------------------------------------------------------------------*/
 
+const termos = document.querySelector('.support')
+termos.addEventListener('click', () => {
+    alert('Use com modereção e não se esqueça de me seguir no GitHub.')
+    alert('Muito obrigado por testar aplicação! 😊')
 })
