@@ -39,5 +39,5 @@ containerChangePhoto,phtoPerfil.addEventListener('mouseout', () => {
 const termos = document.querySelector('.support-terms')
 termos.addEventListener('click', () => {
     alert('Use com modereção e não esqueça de me seguir no GitHub.')
-    alert('Muito obrigado por testar aplicação! 😊')
+    alert('Muito obrigado por testar a aplicação! 😊')
 })
