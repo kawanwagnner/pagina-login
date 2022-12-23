@@ -104,7 +104,7 @@ body {
     padding: 5px;
     border-radius: 10px;
     width: 110%;
-    transition: 2s;
+    transition: .5s;
 }
 
 .support a {
@@ -121,8 +121,30 @@ body {
 
 #support {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: space-around;
+}
+
+.support-terms {
+    border: none;
+    background: none;
+    font-size: 15px;
+    margin: 10px 80px;
+    width: 200px;
+    font-style: italic;
+    font-weight: bolder;
+    color: #095480dc;
+    cursor: pointer;
+}
+
+.support-terms:hover {
+    background-color: #064166;
+    padding: 5px;
+    border-radius: 10px;
+    width: 110%;
+    transition: .5s;
+    color: #fff;
+    font-weight: bold;
 }
 
 /* Inputs configs ------------------------------------------------------------------------------------------------------------------------- */

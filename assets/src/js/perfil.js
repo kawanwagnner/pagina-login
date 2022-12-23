@@ -1,4 +1,4 @@
-/* Pull Informations ..of user ----------------------------------------------------------------------------------*/
+/* Pull Informations ..of user ---------------------------------------------------------------------------------- */
 
 const localNome = document.querySelector('.titulo')
 const localEmail = document.querySelector('.email-box')
@@ -32,4 +32,12 @@ containerChangePhoto,phtoPerfil.addEventListener('mouseenter', () => {
 
 containerChangePhoto,phtoPerfil.addEventListener('mouseout', () => {
     changePhoto.style.opacity = '0%'
+})
+
+/* Termos de Uso. ----------------------------------------------------------------------------------*/
+
+const termos = document.querySelector('.support-terms')
+termos.addEventListener('click', () => {
+    alert('Use com modereção e não esqueça de me seguir no GitHub.')
+    alert('Muito obrigado por testar aplicação! 😊')
 })

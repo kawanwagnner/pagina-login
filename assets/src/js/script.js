@@ -46,10 +46,10 @@ sendInformations.addEventListener('click', () => {
     alert('[Login ainda em desenvolvimento] 😄')
 })
 
-/* Local Storage Login ..comparing informations ----------------------------------------------------------------------------------*/
+/* Termos de Uso. ----------------------------------------------------------------------------------*/
 
-const termos = document.querySelector('.support')
+const termos = document.querySelector('.support-terms')
 termos.addEventListener('click', () => {
-    alert('Use com modereção e não se esqueça de me seguir no GitHub.')
+    alert('Use com modereção e não esqueça de me seguir no GitHub.')
     alert('Muito obrigado por testar aplicação! 😊')
 })
