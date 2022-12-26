@@ -147,6 +147,14 @@ body {
     font-weight: bold;
 }
 
+.invalid-informations {
+    display: none;
+    font-size: 15px;
+    text-align: left;
+    margin-left: 20% ;
+    color: #c51515;
+}
+
 /* Inputs configs ------------------------------------------------------------------------------------------------------------------------- */
 
 input {

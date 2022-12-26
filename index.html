@@ -34,6 +34,7 @@
             <div id="nome">
                 <input class="name-box" type="text" pattern="[ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyzçÇ]*"
                     placeholder="Digite seu Nome:">
+                    <span class="invalid-informations" oninput="ErrorValidate()">Mínimo 3 Caracteres.</span>
             </div>
 
             <h3 class="identificador-sobrenome">Sobrenome:</h3>
@@ -41,16 +42,19 @@
                 <input class="sobrenome-box" type="text"
                     pattern="[ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyzçÇ]*"
                     placeholder="Digite seu sobrenome:">
+                    <span class="invalid-informations">Mínimo 3 Caracteres.</span>
             </div>
             <h3 class="identificador-input">E-mail:</h3>
             <div id="email">
                 <input class="email-box" type="text"
                     pattern="[ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789@.]*"
                     placeholder="Digite seu E-mail:">
+                    <span class="invalid-informations">Digite um e-mail válido!</span>
             </div>
             <h3 class="identificador-input">Senha:</h3>
             <div id="password">
-                <input class="password-box" type="password" placeholder="Digite sua Senha:" min="6" max="30">
+                <input class="password-box" type="password" placeholder="Digite sua Senha:">
+                <span class="invalid-informations">Mínimo 8 e máximo 20 dígitos.</span>
             </div>
             <div id="support">
                 <span class="support"><a href="perfil.html">Já tem cadastro?</a></span>
