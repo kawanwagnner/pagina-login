@@ -1,57 +1,95 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="assets/src/css/perfil.css" />
     <title>[ Bem-Vindo(a)!! ]</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-    <link rel="stylesheet" href="assets/src/css/perfil.css">
-</head>
+  </head>
 
-<body>
+  <body>
     <header id="cabeçalho">
-        <div id="container-navbar">
-            <h1 id="logo">Perfil</h1>
-            <nav id="navbar">
-                <ul id="list-navbar">
-                    <li><a href="index.html">Início</a></li>
-                    <li><a href="https://www.linkedin.com/in/kawan-wagnner-296594236/" target="_blank">Dev's</a></li>
-                    <li><a href="https://github.com/kawanwagnner" target="_blank">Suporte</a></li>
-                    <li><a href="https://github.com/kawanwagnner/pagina-login.git" target="_blank">Novidades</a></li>
-                </ul>
-            </nav>
-            <button id="menu-hamb"><i class="fa-solid fa-bars"></i></button>
-        </div>
+      <h1 class="message-logo">Login</h1>
+
+      <nav id="navbar">
+        <ul id="list-navbar">
+          <li><a href="index.html">Início</a></li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/kawan-wagnner-296594236/"
+              target="_blank"
+              >Dev's</a
+            >
+          </li>
+          <li>
+            <a href="https://github.com/kawanwagnner" target="_blank"
+              >Suporte</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://github.com/kawanwagnner/pagina-login.git"
+              target="_blank"
+              >Novidades</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <button id="menu-hamb"><i class="fa-solid fa-bars"></i></button>
     </header>
     <main id="conteudo">
-        <div id="container-hover"><img id="foto-perfil" src="assets/src/img/sem-foto-perfil.png" alt="Foto de perfil indefinida."><i id="change-photo" class="fa-solid fa-camera-retro"></i></div>
-        <h1 class="titulo">Perfil:</h1>
+      <div id="container-hover">
+        <img
+          id="foto-perfil"
+          src="assets/src/img/sem-foto-perfil.png"
+          alt="Foto de perfil indefinida."
+        /><i id="change-photo" class="fa-solid fa-camera-retro"></i>
+      </div>
+      <h1 class="titulo">Perfil:</h1>
 
-        <div id="container-inputs">
+      <h3 class="identificators">Nome:</h3>
+      <p id="userStatus"></p>
 
-            <h3 class="identificador-input">E-mail:</h3>
-            <div style="margin-left: 20%; text-align: left;"  class="email-box"></div>
+      <div id="container-inputs">
+        <h3 class="identificators">E-mail:</h3>
+        <div style="margin-left: 20%; text-align: left" class="email-box"></div>
 
-            <h3 class="identificador-input">Senha:</h3>
-            <div style="margin-left: 20%; text-align: left;"  class="password-box"></div>
+        <h3 class="identificators">Senha:</h3>
+        <div
+          style="margin-left: 20%; text-align: left"
+          class="password-box"
+        ></div>
 
-            <input id="clean" type="button" value="Sair">
+        <input id="clean" type="button" value="Sair" />
 
-            <div id="support">
-                <span class="support"><a href="https://github.com/kawanwagnner" target="_blank">Suporte: GitHub.</a></span>
-                <input class="support-terms" type="button" value="Termos de cadastro"
-                    style="text-decoration: underline; display: flex;">
-            </div>
+        <div id="supports">
+          <p class="support-github">
+            <a href="https://github.com/kawanwagnner" target="_blank"
+              >Suporte via GitHub.</a
+            >
+          </p>
+          <input
+            class="terms-utilize"
+            type="button"
+            value="Termos de cadastro"
+          />
         </div>
-
+      </div>
     </main>
     <footer id="rodapé">
-        <p>Criado Por <a href="https://github.com/kawanwagnner" target="_blank">Kawan Wagnner</a> Para Fins de
-            Aprendizado.</p>
+      <p>
+        Criado Por
+        <a href="https://github.com/kawanwagnner" target="_blank"
+          >Kawan Wagnner</a
+        >
+        Para Fins de Aprendizado.
+      </p>
     </footer>
-</body>
-<script src="assets/src/js/perfil.js"></script>
-
+  </body>
+  <script src="assets/src/js/perfil.js"></script>
 </html>

@@ -1,76 +1,109 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/src/css/cadastro.css" />
     <title>[ Cadastro ]</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-    <link rel="stylesheet" href="assets/src/css/cadastro.css">
-</head>
+  </head>
 
-<body>
+  <body>
     <header id="cabeçalho">
-        <div id="container-navbar">
-            <h1 id="logo">Logo</h1>
-            <nav id="navbar">
-                <ul id="list-navbar">
-                    <li><a href="index.html">Início</a></li>
-                    <li><a href="https://www.linkedin.com/in/kawan-wagnner-296594236/" target="_blank">Dev's</a></li>
-                    <li><a href="https://github.com/kawanwagnner" target="_blank">Suporte</a></li>
-                    <li><a href="https://github.com/kawanwagnner/pagina-login.git" target="_blank">Novidades</a></li>
-                </ul>
-            </nav>
-            <button id="menu-hamb"><i class="fa-solid fa-bars"></i></button>
-        </div>
+      <h1 class="message-logo">Cadastre-se</h1>
+
+      <nav id="navbar">
+        <ul id="list-navbar">
+          <li><a href="index.html">Início</a></li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/kawan-wagnner-296594236/"
+              target="_blank"
+              >Dev's</a
+            >
+          </li>
+          <li>
+            <a href="https://github.com/kawanwagnner" target="_blank"
+              >Suporte</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://github.com/kawanwagnner/pagina-login.git"
+              target="_blank"
+              >Novidades</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <button id="menu-hamb"><i class="fa-solid fa-bars"></i></button>
     </header>
-    <main id="conteudo">
-        <h1 class="titulo">Cadastro:</h1>
-        <span class="segregação">____________________________________</span>
+    <main id="main">
+      <h1 class="titulo">Cadastro</h1>
 
-        <div id="container-inputs">
-            <h3 class="identificador-input">Nome:</h3>
-            <div id="nome">
-                <input class="name-box" type="text" pattern="[ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyzçÇ]*"
-                    placeholder="Digite seu Nome:">
-                    <span class="invalid-informations" oninput="ErrorValidate()">Mínimo 3 Caracteres.</span>
-            </div>
+      <form id="container-inputs">
+        <label for="nome" class="identificators">Nome</label>
+        <input
+          id="nome"
+          class="name-box"
+          type="text"
+          pattern="[ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyzçÇ]*"
+          placeholder="Digite seu Nome:"
+        />
+        <span class="invalid-informations" oninput="ErrorValidate()"
+          >Mínimo 3 Caracteres.</span
+        >
 
-            <h3 class="identificador-sobrenome">Sobrenome:</h3>
-            <div id="sobrenome">
-                <input class="sobrenome-box" type="text"
-                    pattern="[ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyzçÇ]*"
-                    placeholder="Digite seu sobrenome:">
-                    <span class="invalid-informations">Mínimo 3 Caracteres.</span>
-            </div>
-            <h3 class="identificador-input">E-mail:</h3>
-            <div id="email">
-                <input class="email-box" type="text"
-                    pattern="[ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789@.]*"
-                    placeholder="Digite seu E-mail:">
-                    <span class="invalid-informations">Digite um e-mail válido!</span>
-            </div>
-            <h3 class="identificador-input">Senha:</h3>
-            <div id="password">
-                <input class="password-box" type="password" placeholder="Digite sua Senha:">
-                <span class="invalid-informations">Mínimo 8 e máximo 20 dígitos.</span>
-            </div>
-            <div id="support">
-                <span class="support"><a href="perfil.html">Já tem cadastro?</a></span>
-                <input class="support-terms" type="button" value="Termos de cadastro"
-                    style="text-decoration: underline; display: flex;">
-            </div>
+        <label for="sobrenome" class="identificators">Sobrenome</label>
+        <input
+          id="sobrenome"
+          class="sobrenome-box"
+          type="text"
+          pattern="[ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyzçÇ]*"
+          placeholder="Digite seu sobrenome:"
+        />
+        <span class="invalid-informations">Mínimo 3 Caracteres.</span>
 
-            <input id="send-informations" type="button" value="Enviar☑️">
+        <label for="email" class="identificators">E-mail</label>
+        <input
+          id="email"
+          class="email-box"
+          type="text"
+          pattern="[ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789@.]*"
+          placeholder="Digite seu E-mail:"
+        />
+        <span class="invalid-informations">Digite um e-mail válido!</span>
+
+        <label for="password" class="identificators">Senha</label>
+        <input
+          id="password"
+          class="password-box"
+          type="password"
+          placeholder="Digite sua Senha:"
+        />
+        <span class="invalid-informations">Mínimo 8 e máximo 20 dígitos.</span>
+
+        <div id="support-container">
+          <p class="sign-in"><a href="perfil.html">Já tem cadastro?</a></p>
+          <input
+            class="terms-utilize"
+            type="button"
+            value="Termos de cadastro"
+          />
         </div>
 
+        <input id="send-informations" type="button" value="Enviar" />
+      </form>
     </main>
     <footer id="rodapé">
-        <p>Criado Por <a href="https://github.com/kawanwagnner" target="_blank">Kawan Wagnner</a> Para Fins de
-            Aprendizado.</p>
+      <p>
+        Criado Por
+        <a href="https://github.com/kawanwagnner" target="_blank"
+          >Kawan Wagnner</a
+        >
+        Para Fins de Aprendizado.
+      </p>
     </footer>
-</body>
-<script src="assets/src/js/script.js"></script>
-
+  </body>
+  <script src="assets/src/js/script.js"></script>
 </html>

@@ -22,35 +22,28 @@ sendInformations.addEventListener('click' || 'Enter', () => {
     localSenha = document.querySelector('.password-box').value
 
     const usuario = {}
-    usuario.nome = localStorage.setItem('nome', document.querySelector('.name-box').value);
-    usuario.sobrenome = localStorage.setItem('sobrenome', document.querySelector('.sobrenome-box').value);
-    usuario.email = localStorage.setItem('email', document.querySelector('.email-box').value);
-    usuario.password = localStorage.setItem('password', document.querySelector('.password-box').value);
+    usuario.nome = localStorage.setItem('nome', localNome);
+    usuario.sobrenome = localStorage.setItem('sobrenome', localSobrenome);
+    usuario.email = localStorage.setItem('email', localEmail);
+    usuario.password = localStorage.setItem('password', localSenha);
 
     /* validation of date ..comparing informations ---------------------------------------------------------------------------------- */
 
     if (localNome == '') {
         alert('Digite um nome válido!')
-    
-    }
-    
-    if (localSobrenome == '') {
+    } else if (localSobrenome == '') {
         alert('Digite um sobrenome válido!')
-    }
-
-    if (localEmail == '') {
+    } else if (localEmail == '') {
         alert('Digite um e-mail válido!')
-    }
-
-    if (localSenha.length >= 8 && localSenha.length <= 15) {
-        location.href = "perfil.html"
-        alert(`Bem-vindo(a)!!`)
+    } else if (localSenha.length < 8 || localSenha.length > 15) {
+        alert('Senha deve ser maior que 8 e menor que 15 dígitos!')
+    } else {
+        location.href = "perfil.html";
+        alert(`Bem-vindo(a)!!`);
         nome.innerHTML = '';
         sobrenome.innerHTML = '';
         email.innerHTML = '';
         password.innerHTML = '';
-    } else {
-        alert('Senha deve ser maior que 8 e menor que 15 dígitos!')
     }
 })
 
@@ -60,8 +53,8 @@ sendInformations.addEventListener('click' || 'Enter', () => {
 
 /* Termos de Uso. ----------------------------------------------------------------------------------*/
 
-const termos = document.querySelector('.support-terms')
+const termos = document.querySelector('.terms-utilize')
 termos.addEventListener('click', () => {
-    alert('Use com modereção e não esqueça de me seguir no GitHub: Clique em suporte ou pesquise "kawanwagnner".')
+    alert('Use com modereção e não esqueça de me seguir no GitHub: Clique em suporte ou pesquise direto no GitHub por "kawanwagnner".')
     alert('Muito obrigado por testar a aplicação! 😊')
 })
